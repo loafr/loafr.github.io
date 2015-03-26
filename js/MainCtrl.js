@@ -1,4 +1,6 @@
 angular.module('lrApp').controller('MainCtrl', function($scope, mainService) {
-	$scope.test = "angular works"
-	
+	$scope.showInfo = false;
+	$scope.showInfo = function() {
+		$scope.showInfo = !$scope.showInfo;
+	};
 });
