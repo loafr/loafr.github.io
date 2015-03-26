@@ -1,4 +1,3 @@
-angular.module('lrApp').controller(MainCtrl, function($scope) {
-	//
+angular.module('lrApp').controller('MainCtrl', function($scope) {
 	$scope.test = "angular works"
-})
+});
