@@ -1,13 +1,22 @@
 <nav>
-	<a href="/#/">Home</a>
-	<a href="/#/projects">Projects</a>
+	<span class="nav-text"><a href="/#/">Home</a></span
+	<span class="nav-text"><a href="/#/projects">Projects</a></span>
 </nav>
 
 <h2>.com</h2>
 <div>
-	<p>Adobe Optimization Analyst</p>
-	<p>Adobe Support Engineer</p>
-	<p>OrangeSoda Marketing Expert</p>
+	<p ng-click="showInfo()">Adobe Optimization Analyst</p>
+		<div ng-show="showInfo">
+			<p>Implement Adobe on Adobe</p>
+		</div>
+	<p ng-click="showInfo()">Adobe Support Engineer</p>
+		<div ng-show="showInfo">
+			<p>Fend off clients from our beloved engineers</p>
+		</div>
+	<p ng-click="showInfo()">OrangeSoda Marketing Expert</p>
+		<div ng-show="showInfo">
+			<p>SEO & PPC for the little guys</p>
+		</div>
 </div>
 <h2>.edu</h2>
 <div>

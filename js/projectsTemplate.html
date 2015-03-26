@@ -1,11 +1,20 @@
 <nav>
-	<a href="/#/about">About</a>
-	<a href="/#/home">Home</a>
+	<span class="nav-text"><a href="/#/about">About</a></span>
+	<span class="nav-text"><a href="/#/home">Home</a></span>
 </nav>
 
 <h2>.net</h2>
 <div>
-	<p>Pay Off My Mortgage</p>
-	<p>Angular Tunes</p>
-	<p>Nested Time/Date Directive</p>
+	<p ng-click="showInfo()">Pay Off My Mortgage</p>
+		<div ng-show="showInfo">
+			<p>App that helps the little man stick it to the man. (a.k.a. Glorified Lottery)</p>
+		</div>
+	<p ng-click="showInfo()">Angular Tunes</p>
+		<div ng-show="showInfo">
+			<p>iTunes API that searches everything Apple's got</p>
+		</div>
+	<p ng-click="showInfo()">Nested Time/Date Directive</p>
+		<div ng-show="showInfo">
+			<p>Angular directive for times and dates for use anywhere</p>
+		</div>
 </div>
