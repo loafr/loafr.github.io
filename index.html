@@ -3,21 +3,12 @@
 	<title>LR</title>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js"></script>
 </head>
 <body ng-app="lrApp">
-	<div ng-controller="MainCtrl">
-		<nav>
-			<a href="/#/about">About</a>
-			<a href="/#/projects">Projects</a>
-		</nav>
-		  <div class="container">
-		  	<h1>Hello</h1>
-		  	<p class="about-time">About Time You Checked Me Out</p>
-			<div>
-			<clock class="time" format="HH:mm:ss"></clock>
-			</div>
-		  </div>
+	<div>
+		 <ng-view></ng-view>
 	</div>
 	<script src="js/app.js"></script>
 	<script src="js/MainCtrl.js"></script>
