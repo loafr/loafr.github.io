@@ -5,16 +5,10 @@
 
 <h2>.net</h2>
 <div>
-	<p ng-click="showInfo4()">Pay Off My Mortgage</p>
-		<div ng-show="showInfo4">
-			<p>App that helps the little man stick it to the man. (a.k.a. Glorified Lottery)</p>
-		</div>
-	<p ng-click="showInfo5()">Angular Tunes</p>
-		<div ng-show="showInfo5">
-			<p>iTunes API that searches everything Apple's got</p>
-		</div>
-	<p ng-click="showInfo6()">Nested Time/Date Directive</p>
-		<div ng-show="showInfo6">
-			<p>Angular directive for times and dates for use anywhere</p>
-		</div>
+	<div class="list" ng-click="expand7 = !expand7">Pay Off My Mortgage</div>
+			<p ng-show="expand7">App that helps the little man stick it to the man. (a.k.a. Glorified Lottery)</p>
+	<div class="list" ng-click="expand8 = !expand8">Angular Tunes</div>
+			<p ng-show="expand8">iTunes API that searches everything Apple's got</p>
+	<div class="list" ng-click="expand9 = !expand9">Nested Time/Date Directive</div>
+			<p ng-show="expand9">Angular directive for times and dates for use anywhere</p>
 </div>

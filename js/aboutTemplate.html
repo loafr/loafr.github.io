@@ -5,24 +5,24 @@
 
 <h2>.com</h2>
 <div>
-	<p ng-click="showInfo1()">Adobe Optimization Analyst</p>
-		<div ng-show="showInfo1">
-			<p>Implement Adobe on Adobe</p>
-		</div>
-	<p ng-click="showInfo2()">Adobe Support Engineer</p>
-		<div ng-show="showInfo2">
-			<p>Fend off clients from our beloved engineers</p>
-		</div>
-	<p ng-click="showInfo3()">OrangeSoda Marketing Expert</p>
-		<div ng-show="showInfo3">
-			<p>SEO & PPC for the little guys</p>
-		</div>
+	<div class="list" ng-click="expand1 = !expand1">Adobe Optimization Analyst</div>
+			<p ng-show="expand1">Implement Adobe on Adobe</p>
+	<div class="list" ng-click="expand2 = !expand2">Adobe Support Engineer</div>
+			<p ng-show="expand2">Fend off clients from our beloved engineers</p>
+	<div class="list" ng-click="expand3 = !expand3">OrangeSoda Marketing Expert</div>
+			<p ng-show="expand3">SEO & PPC for the little guys</p>
 </div>
 <h2>.edu</h2>
 <div>
-	<p>UVU MBA</p>
-	<p>DevMountain</p>
-	<p>UVU B.S. Marketing</p>
+	<div class="list" ng-click="expand4 = !expand4">UVU MBA</div>
+		<p ng-show="expand4">Master's degree... ooohhh wow :D</p>
+	<div class="list" ng-click="expand5 = !expand5">DevMountain</div>
+		<p ng-show="expand5">Coding bootcamp. Get down and give me 20!!</p>
+	<div class="list" ng-click="expand6 = !expand6">UVU B.S. Marketing</div>
+		<p ng-show="expand6">Ya know, it is the biggest university in Utah now...</p>
 </div>
-
+<br>
+<br>
+<br>
+<br>
 <a href="http://www.loganrobins.com/resume.pdf"><span>traditional resume</span></a>
