@@ -27,3 +27,7 @@ nav {
 .container {
 	text-align: center;
 }
+
+.list {
+	cursor: pointer;
+}
