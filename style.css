@@ -19,8 +19,8 @@ a:hover {
 	color: #149ACC;
 	z-index: -1;
 	-webkit-box-shadow: 0 8px 6px -6px #eee;
-     -moz-box-shadow: 0 8px 6px -6px #eee;
-          box-shadow: 0 8px 6px -6px #eee;
+    -moz-box-shadow: 0 8px 6px -6px #eee;
+    box-shadow: 0 8px 6px -6px #eee;
 }
 
 h1 {
@@ -32,6 +32,8 @@ h1 {
 
 h2 {
 	padding-left: 5%;
+	font-weight: 100;
+	font-size: 32px;
 }
 
 nav {
@@ -68,14 +70,16 @@ nav {
 }
 
 .container {
-	padding: 20px 5px 20px 60px;
+	padding: 5px 5px 20px 60px;
 }
 
 .list {
 	cursor: pointer;
-	padding: 5px 5px 5px 1%;
+	padding: 15px 5px 10px 1%;
 	width: 33%;
 	margin-left: 3%;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
 .drop-list {
@@ -84,17 +88,24 @@ nav {
 
 .green {
 	border-bottom: 1px #74E800 solid;
+	border-left: 1px #74E800 solid;
 }
 
 .orange {
 	border-bottom: 1px #FF8B0D solid;
+	border-left: 1px #FF8B0D solid;
 }
 
 .fuschia {
 	border-bottom: 1px #CD00E8 solid;
+	border-left: 1px #CD00E8 solid;
 }
 
 .right { 
 	float: right;
 	margin-right: 5%;
+}
+
+.resume {
+	margin-left: 6%;
 }
