@@ -1,4 +1,4 @@
-var app = angular.module('lrApp', ['ngRoute']);
+var app = angular.module('lrApp', ['ngRoute', 'ngAnimate']);
 
 app.config(function($routeProvider, $locationProvider){
 
