@@ -120,8 +120,12 @@ nav {
     opacity: 0;
 }
 
-.drop-animate.ng-hide-add,
 .drop-animate.ng-hide-remove {
-    -webkit-transition: 0.5s ease all;
-    transition: 0.5s ease all;
+    -webkit-transition: .33s ease all;
+    transition: .33s ease all;
+}
+
+.drop-animate.ng-hide-add {
+	-webkit-transition: 0.1s ease all;
+    transition: 0.1s ease all;
 }
