@@ -1,0 +1,131 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	background: url("crossword.png");
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0082B2;
+}
+
+a:hover {
+	color: #149ACC;
+	z-index: -1;
+	-webkit-box-shadow: 0 8px 6px -6px #eee;
+    -moz-box-shadow: 0 8px 6px -6px #eee;
+    box-shadow: 0 8px 6px -6px #eee;
+}
+
+h1 {
+	font-size: 180px;
+	font-weight: 100;
+	padding: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
+}
+
+h2 {
+	padding-left: 5%;
+	font-weight: 100;
+	font-size: 32px;
+}
+
+nav {
+	padding: 2% 5% 2% 10%;
+	font-size: 20px;
+}
+
+#resume-link {
+	color: navy;
+}
+
+#no-shadow:hover {
+	color: #149ACC;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.time {
+	font-size: 140px;
+}
+
+.about-time {
+	font-size: 36px;
+	margin-top: -50px;
+}
+
+.nav-text {
+	padding-right: 40px;
+	color: #0082B2;
+}
+
+.home-container {
+	text-align: center;
+}
+
+.container {
+	padding: 5px 5px 20px 60px;
+}
+
+.list {
+	cursor: pointer;
+	padding: 15px 5px 10px 1%;
+	width: 33%;
+	margin-left: 3%;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.drop-list {
+	padding: 5px 5px 5px 5%;
+}
+
+.green {
+	border-bottom: 1px #74E800 solid;
+	border-left: 1px #74E800 solid;
+}
+
+.orange {
+	border-bottom: 1px #FF8B0D solid;
+	border-left: 1px #FF8B0D solid;
+}
+
+.fuschia {
+	border-bottom: 1px #CD00E8 solid;
+	border-left: 1px #CD00E8 solid;
+}
+
+.right { 
+	float: right;
+	margin-right: 5%;
+}
+
+.resume {
+	margin-left: 6%;
+}
+
+
+.drop-animate {
+    opacity: 1;
+}
+
+.drop-animate.ng-hide {
+    opacity: 0;
+}
+
+.drop-animate.ng-hide-remove {
+    -webkit-transition: .33s ease all;
+    transition: .33s ease all;
+}
+
+.drop-animate.ng-hide-add {
+	-webkit-transition: 0.1s ease all;
+    transition: 0.1s ease all;
+}
