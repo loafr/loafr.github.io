@@ -15,6 +15,10 @@ app.config(function($routeProvider, $locationProvider){
   	templateUrl: 'js/projectsTemplate.html',
   	controller: 'MainCtrl'
   })
+  .when('/target', {
+    templateUrl: 'js/targetExample.html',
+    controller: 'MainCtrl'
+  })
   .otherwise ({
   	redirectTo: '/'
   })
