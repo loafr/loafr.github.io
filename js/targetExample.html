@@ -5,10 +5,10 @@
 
 <div class="container">
 <script type="text/javascript" > 
-	mboxDefine('dynamicElement','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
+	mboxDefine('dynamicElement0','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
 	mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
 </script>
- <div id="dynamicElement">First mbox</div>
+ <div id="dynamicElement0">First mbox</div>
  <ul>
  	<li>Item 1</li>
  	<li>Item 2</li>
@@ -21,24 +21,30 @@
 
 <div>
 	<p>Second mbox update</p>
-</div>
-<div class="mboxDiv"></div>
-<script>
-	mboxUpdate('dynamic-lr_mbox_target_example' , 'param2=value2');
-</script>
-<div>
-	<p>Third mbox update</p>
-</div>
-<div class="mboxDiv"></div>
-<script>
-	mboxUpdate('dynamic-lr_mbox_target_example' , 'param3=value3');
-</script>
-<div>
-	<p>Fourth mbox update</p>
-</div>
-<div class="mboxDiv"></div>
-<script>
-	mboxUpdate('dynamic-lr_mbox_target_example' , 'param4=value4');
-</script>
 
+	<script type="text/javascript" > 
+		mboxDefine('dynamicElement1','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
+		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+	</script>
+</div>
+<div id="dynamicElement1">
+	<div>
+		<p>Third mbox update</p>
+	</div>
+</div>
+<div id="dynamicElement2">
+	<script type="text/javascript" > 
+		mboxDefine('dynamicElement2','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
+		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+	</script>
+	<div>
+		<p>Fourth mbox update</p>
+	</div>
+</div>
+<div id="dynamicElement3">
+	<script type="text/javascript" > 
+		mboxDefine('dynamicElement3','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
+		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+	</script>
+</div>
 </div>
