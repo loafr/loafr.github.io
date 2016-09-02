@@ -3,6 +3,8 @@
 	<span class="nav-text"><a href="/#/projects">Projects</a></span>
 </nav>
 
+<h2>At.js Testing</h2>
+
 <div class="container">
 <script type="text/javascript" > 
 	mboxDefine('dynamicElement0','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
@@ -24,7 +26,7 @@
 
 	<script type="text/javascript" > 
 		mboxDefine('dynamicElement1','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
-		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter2=value2');
 	</script>
 </div>
 <div id="dynamicElement1">
@@ -35,7 +37,7 @@
 <div id="dynamicElement2">
 	<script type="text/javascript" > 
 		mboxDefine('dynamicElement2','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
-		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter3=value3');
 	</script>
 	<div>
 		<p>Fourth mbox update</p>
@@ -44,7 +46,17 @@
 <div id="dynamicElement3">
 	<script type="text/javascript" > 
 		mboxDefine('dynamicElement3','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
-		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+		mboxUpdate('dynamic-lr_mbox_target_example', 'parameter4=value4');
 	</script>
 </div>
+</div>
+
+<h2>Dynamic Examples</h2>
+<div class="container">
+	<div class="list green" ng-click="expand1 = !expand1">mbox 1</div>
+			<p id="dynamicElement1" class="drop-list drop-animate" ng-show="expand1">update</p>
+	<div class="list orange" ng-click="expand2 = !expand2">mox 2</div>
+			<p id="dynamicElement2" class="drop-list drop-animate" ng-show="expand2">update</p>
+	<div class="list fuschia" ng-click="expand3 = !expand3">mbox 3</div>
+			<p id="dynamicElement3" class="drop-list drop-animate" ng-show="expand3">update</p>
 </div>
