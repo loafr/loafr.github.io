@@ -1,37 +1,44 @@
 <nav>
-	<span class="nav-text"><a href="/#/">Home</a></span
+	<span class="nav-text"><a href="/#/">Home</a></span>
 	<span class="nav-text"><a href="/#/projects">Projects</a></span>
 </nav>
 
-<!-- <h2>Modal Example</h2>
-<div class="container">
-	<a class="btn btn-default" href ng-click="show()">Show a Modal</a>
-</div>
-<h2>Drop Down Example</h2>
-<div class="container">
-	<select name="Select">
-		<option selected>Item 1</option>
-		<option>Item 2</option>
-		<option>Item 3</option>
-		<option>Item 4</option>
-		<option>Item 5</option>
-	</select>
-</div>
- -->
-
-
 <div class="container">
 
- <a href="#openModal">Open Modal</a>
+ <div id="dynamicElement">First mbox</div>
+ <ul>
+ 	<li>Item 1</li>
+ 	<li>Item 2</li>
+ 	<li>Item 3</li>
+ 	<li>Item 4</li>
+ 	<li>Item 5</li>
+ </ul>
+ <div></div>
+<script type="text/javascript" > 
+	mboxDefine('dynamicElement','dynamic-lr_mbox_target_example', 'parameter1=value1'); 
+	mboxUpdate('dynamic-lr_mbox_target_example', 'parameter1=value1');
+</script>
 
-<div id="openModal" class="modalDialog">
-    <div>	<a href="#close" title="Close" class="close">X</a>
-
-        	<h2>Modal Box</h2>
-
-        <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-        <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-    </div>
-
+<div>
+	<p>Second mbox update</p>
 </div>
+<div class="mboxDiv"></div>
+<script>
+	mboxUpdate('dynamic-lr_mbox_target_example' , 'param2=value2');
+</script>
+<div>
+	<p>Third mbox update</p>
+</div>
+<div class="mboxDiv"></div>
+<script>
+	mboxUpdate('dynamic-lr_mbox_target_example' , 'param3=value3');
+</script>
+<div>
+	<p>Fourth mbox update</p>
+</div>
+<div class="mboxDiv"></div>
+<script>
+	mboxUpdate('dynamic-lr_mbox_target_example' , 'param4=value4');
+</script>
+
 </div>
