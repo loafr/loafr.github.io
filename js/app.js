@@ -20,6 +20,10 @@ app.config(function($routeProvider, $locationProvider){
     templateUrl: 'js/targetExample.html',
     controller: 'MainCtrl'
   })
+  .when('/modal', {
+    templateUrl: 'js/modal.html',
+    controller: 'MainCtrl'
+  })
   .otherwise ({
   	redirectTo: '/'
   })
