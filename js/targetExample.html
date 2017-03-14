@@ -55,7 +55,7 @@
 //   })
 // });
 adobe.target.getOffer({
-    "mbox": "LR-Global", /* this mbox name can be anything. Use a unique name for this particular test. */
+    "mbox": "LR-Apply-Offer", /* this mbox name can be anything. Use a unique name for this particular test. */
     "params": {"page": "target", "language": "en"}, /* You can add however many parameters we need for this application */
     "success": function(offers) {
         adobe.target.applyOffer( { "offer": offers } ); /* this writes the code we have in Target into the <head> of the page. */
