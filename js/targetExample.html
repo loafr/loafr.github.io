@@ -39,20 +39,34 @@
     //         }
     //     })
     // });
-$('#applyOfferContent').click(function() {
-  adobe.target.getOffer({
-    mbox: 'LR-Global',
-    success: function(offer) {
-      showContent('applying content... (3 seconds delay)');
-      setTimeout(function() {
-        showContent('retrieved content:\n' + JSON.stringify(offer));
-        adobe.target.applyOffer({
-          offer: offer
-        })
-      }, 3000)
-    },error: function() {
-    }
-  })
+// $('#applyOfferContent').click(function() {
+//   adobe.target.getOffer({
+//     mbox: 'LR-Global',
+//     success: function(offer) {
+//       showContent('applying content... (3 seconds delay)');
+//       setTimeout(function() {
+//         showContent('retrieved content:\n' + JSON.stringify(offer));
+//         adobe.target.applyOffer({
+//           offer: offer
+//         })
+//       }, 3000)
+//     },error: function() {
+//     }
+//   })
+// });
+adobe.target.getOffer({
+    "mbox": "LR-Global", /* this mbox name can be anything. Use a unique name for this particular test. */
+    "params": {"page": "target", "language": "en"}, /* You can add however many parameters we need for this application */
+    "success": function(offers) {
+        adobe.target.applyOffer( { "offer": offers } ); /* this writes the code we have in Target into the <head> of the page. */
+    },
+    "error": function(status, error) {
+        if (console && console.log) {
+            console.log(status);
+            console.log(error);
+        }
+    },
+    "timeout": 5000 // might want to test different timeouts to see what works
 });
 </script>
 
