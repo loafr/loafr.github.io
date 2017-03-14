@@ -27,18 +27,33 @@
 
 
 <script>
-    $('#applyOfferContent').click(function() {
-        adobe.target.getOffer({
-            mbox: 'LR-Global',
-            success: function(offer) {
-                adobe.target.applyOffer({
-                    offer: offer
-                })
-            },
-            error: function() {
-            }
+    // $('#applyOfferContent').click(function() {
+    //     adobe.target.getOffer({
+    //         mbox: 'LR-Global',
+    //         success: function(offer) {
+    //             adobe.target.applyOffer({
+    //                 offer: offer
+    //             })
+    //         },
+    //         error: function() {
+    //         }
+    //     })
+    // });
+$('#applyOfferContent').click(function() {
+  adobe.target.getOffer({
+    mbox: 'LR-Global',
+    success: function(offer) {
+      showContent('applying content... (3 seconds delay)');
+      setTimeout(function() {
+        showContent('retrieved content:\n' + JSON.stringify(offer));
+        adobe.target.applyOffer({
+          offer: offer
         })
-    });
+      }, 3000)
+    },error: function() {
+    }
+  })
+});
 </script>
 
 <!-- <div>
